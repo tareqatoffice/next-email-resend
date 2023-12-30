@@ -5,8 +5,8 @@ const SendBasicEmail = () => {
 	const resend = new Resend('re_Vt7A7Lnq_EC5tLPHWdg3QZMVFK2M7goim');
 	const send_mail = async () => {
 		const { data, error } = await resend.emails.send({
-			from: 'Acme <onboarding@resend.dev>',
-			to: ['tareqatoffice@gmail.com'],
+			from: 'info@tareqnmd.com',
+			to: 'tareqatoffice@gmail.com',
 			subject: 'Hello World',
 			html: '<strong>It works!</strong>',
 		});
