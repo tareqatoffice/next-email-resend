@@ -11,6 +11,7 @@ export async function POST() {
 			return resend.emails.send({
 				from: 'no-reply@tareqnmd.com',
 				to: email,
+				reply_to: 'supprot@tareqnmd.com',
 				subject: 'Multiple Email Send',
 				react: EmailTemplate({ firstName: 'John' }),
 			});
