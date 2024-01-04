@@ -2,11 +2,12 @@
 import { Resend } from 'resend';
 
 const SendBasicEmail = () => {
-	const resend = new Resend('re_Vt7A7Lnq_EC5tLPHWdg3QZMVFK2M7goim');
+	// const resend = new Resend('re_Vt7A7Lnq_EC5tLPHWdg3QZMVFK2M7goim');
+	const resend = new Resend('re_a6Tu7TPx_5DQNSUamSZ1Zz5psGrxYoAP7');
 	const send_mail = async () => {
 		const { data, error } = await resend.emails.send({
-			from: 'info@tareqnmd.com',
-			to: 'tareqatoffice@gmail.com',
+			from: 'Acme <onboarding@resend.dev>',
+			to: ['delivered@resend.dev'],
 			subject: 'Hello World',
 			html: '<strong>It works!</strong>',
 		});
