@@ -1,4 +1,4 @@
-import { EmailTemplate } from '@/components/email/basic-template';
+import AirbnbReviewEmail from '@/components/email/air-bnb-template';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -11,7 +11,8 @@ export async function POST({ firstName }: { firstName: string }) {
 			bcc: ['tareqatoffice@gmail.com'],
 			cc: ['tareqatoffice@gmail.com'],
 			subject: 'Basic Email Send',
-			react: EmailTemplate({ firstName }),
+			// react: EmailTemplate({ firstName }),
+			react: AirbnbReviewEmail({}),
 		});
 
 		return Response.json(data);
