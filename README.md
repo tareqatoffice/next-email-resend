@@ -2,5 +2,5 @@
 
 ### Technology
 - Next
-- JavaScript
+- Typescript
 - Resend
